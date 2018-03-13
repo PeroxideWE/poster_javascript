@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+.row {
+  display: flex;
+  /* background-color: coral; */
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 30%;
+  padding: 10px;
+  background-color: #428bca;
+  /* height: 300px; Should be removed. Only for demonstration */
+}
+.column2 {
+  flex: 70%;
+  padding: 10px;
+  background-color: coral;
+  /* height: 300px; Should be removed. Only for demonstration */
+}
+.bigbox {
+  background-color: #c09d11;
+  padding: 10px;
+}
+.stars span {
+  color: #b4b4b4;
+  user-select: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+.stars .filled {
+  color: black;
+}

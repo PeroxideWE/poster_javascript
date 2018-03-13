@@ -1,0 +1,13 @@
+{
+  "name": "",
+  "version": "",
+  "devDependencies": {
+    "less": "^3.0.1"
+  }
+
+  ,
+"scripts": {
+"Css_BAD_TASTE": "lessc Css_BAD_TASTE.less Css_BAD_TASTE.css"
+  }
+}
+

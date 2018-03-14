@@ -1,11 +1,13 @@
 import {movieData} from "./data";
 import * as $ from "jquery";
+import { Review } from "./interfaces";
+
 
 //let $ = require("./node_modules/jquery");
 //let movieData = require("./data");
-function renderMovie(movie){
+function renderMovie(movie:Review){
 
-    console.log("funka denna??? jag?", movie);
+   // console.log("funka denna??? jag?", movie);
     let title = document.getElementById("movieTitle");
     title.innerText = movie.movieTitle;
     
@@ -16,10 +18,12 @@ function renderMovie(movie){
     imageIndex.setAttribute("src", movie.moviePicture);
     
     // var text= document.getElementById("movieActors").innerHTML;
-    let i: number;
-    for ( i = 0; i < movie.length; i++) {
-        const node = document.createElement("LI");
-        var textnode = document.createTextNode(movie.movieActors);
+
+
+    for (let i = 0; i < movie.movieActors.length; i++) {
+        console.log("for loop2", movie.movieActors[i]);
+        var node = document.createElement("li");
+        var textnode = document.createTextNode(movie.movieActors[i]);
         node.appendChild(textnode); 
         document.getElementById("movieActors").appendChild(node);
         // document.querySelector(".movieActors").appendChild(node);
@@ -27,7 +31,7 @@ function renderMovie(movie){
 }
 
 function changeStarRating(rating){
-    let i: number;
+
     for(let i = 1; i <= 5; i++){
         const star = document.getElementById("star" + i);
         if (i <= rating){

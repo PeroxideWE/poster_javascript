@@ -3,7 +3,7 @@ let movieData = require("./data");
 function renderMovie(movie){
     
     
-    console.log("dfghj??? jag?", movie)
+    console.log("funka denna??? jag?", movie)
     let title= document.getElementById("movieTitle");
     title.innerText=movie.movieTitle;
     
@@ -21,6 +21,7 @@ function renderMovie(movie){
         node.appendChild(textnode); 
         document.getElementById("movieActors").appendChild(node); 
         //document.querySelector(".movieActors").appendChild(node);
+        
     }
 }; 
 

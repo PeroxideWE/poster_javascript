@@ -14,7 +14,7 @@
     "Css_BAD_TASTE": "lessc Css_BAD_TASTE.less distribution/Css_BAD_TASTE.css",
     "bundle": "webpack",
     "start:dev": "webpack-dev-server",
-    "copyindex": "cp index.html distribution/index.html",
+    "copyindex": "cp index.html distribution/Index.html",
     "build": "npm run bundle && npm run Css_BAD_TASTE && npm run copyindex",
     "lintless": "stylelint Css_BAD_TASTE.less",
     "lintjs": "eslint .",

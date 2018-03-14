@@ -18,7 +18,7 @@
     "build": "npm run bundle && npm run Css_BAD_TASTE && npm run copyindex",
     "lintless": "stylelint Css_BAD_TASTE.less",
     "lintjs": "eslint .",
-    "lint": " npm run lintless && npm run lintjs"
+    "lint": " npm run lintless && lintjs"
   },
   "dependencies": {
     "jquery": "^3.3.1"

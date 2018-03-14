@@ -1,4 +1,4 @@
-module.exports = { 
+export const movieData = { 
     //movieinfo goes here
     movieTitle:"Bad taste",
     movieParagraph: "The population of a small town disappears and is replaced by aliens that chase human flesh for their intergalactic fast-food chain.",

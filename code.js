@@ -3,7 +3,7 @@ let movieData = require("./data");
 function renderMovie(movie){
     
     
-    console.log("BUUUUUUUUUU??? jag?", movie)
+    console.log("dfghj??? jag?", movie)
     let title= document.getElementById("movieTitle");
     title.innerText=movie.movieTitle;
     

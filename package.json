@@ -10,10 +10,12 @@
   },
 
   "scripts": {
-    "Css_BAD_TASTE": "lessc Css_BAD_TASTE.less Css_BAD_TASTE.css",
+    "Css_BAD_TASTE": "lessc Css_BAD_TASTE.less distribution/Css_BAD_TASTE.css",
     "bundle": "webpack",
-    "start:dev": "webpack-dev-server"
-    
+    "start:dev": "webpack-dev-server",
+    "copyindex": "cp index.html distribution/index.html",
+    "build": "npm run bundle && npm run Css_BAD_TASTE && npm run copyindex"
+
   },
   "dependencies": {
     "jquery": "^3.3.1"
